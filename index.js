@@ -3,7 +3,8 @@ const config = require("./config");
 const bot = require("./lib/bot");
 const fetchSession = require("./lib/session");
 
-const app = new express();
+const app = require('express')();
+
 let PORT = process.env.PORT || 9000
 
 app.get('/', function (req, res) {
